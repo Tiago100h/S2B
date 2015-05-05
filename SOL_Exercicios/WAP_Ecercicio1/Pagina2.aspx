@@ -12,11 +12,15 @@
     
         <asp:Label ID="Lbl_Usuario" runat="server" Text="Usuário: "></asp:Label>
         <asp:TextBox ID="TextBox_Usuario" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox_Usuario" ErrorMessage="Campo obrigatório"></asp:RequiredFieldValidator>
+        <br />
         <asp:Label ID="Lbl_Senha" runat="server" Text="Senha: "></asp:Label>
         <asp:TextBox ID="TextBox_Senha" runat="server" TextMode="Password"></asp:TextBox>    
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox_Senha" ErrorMessage="Campo obrigatório"></asp:RequiredFieldValidator>
+        <br />
         <asp:Button ID="Botao_Login" runat="server" OnClick="Botao_Login_Click" Text="Login" />
     </div>      
-        <asp:Label ID="Lbl_Erro" runat="server" Text="Erro" Visible="False"></asp:Label>
+        <asp:Label ID="Lbl_Erro" runat="server" Text="Login/Senha inválidos" Visible="False" ForeColor="Red"></asp:Label>
     </form>
 </body>
 </html>

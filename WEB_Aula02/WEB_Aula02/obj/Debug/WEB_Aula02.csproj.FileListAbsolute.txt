@@ -1,0 +1,12 @@
+C:\Tiago\WEB_Aula02\WEB_Aula02\bin\WEB_Aula02.dll.config
+C:\Tiago\WEB_Aula02\WEB_Aula02\bin\WEB_Aula02.dll
+C:\Tiago\WEB_Aula02\WEB_Aula02\bin\WEB_Aula02.pdb
+C:\Tiago\WEB_Aula02\WEB_Aula02\obj\Debug\WEB_Aula02.csprojResolveAssemblyReference.cache
+C:\Tiago\WEB_Aula02\WEB_Aula02\obj\Debug\WEB_Aula02.dll
+C:\Tiago\WEB_Aula02\WEB_Aula02\obj\Debug\WEB_Aula02.pdb
+C:\S2B\WEB_Aula02\WEB_Aula02\bin\WEB_Aula02.dll.config
+C:\S2B\WEB_Aula02\WEB_Aula02\bin\WEB_Aula02.dll
+C:\S2B\WEB_Aula02\WEB_Aula02\bin\WEB_Aula02.pdb
+C:\S2B\WEB_Aula02\WEB_Aula02\obj\Debug\WEB_Aula02.csprojResolveAssemblyReference.cache
+C:\S2B\WEB_Aula02\WEB_Aula02\obj\Debug\WEB_Aula02.dll
+C:\S2B\WEB_Aula02\WEB_Aula02\obj\Debug\WEB_Aula02.pdb
