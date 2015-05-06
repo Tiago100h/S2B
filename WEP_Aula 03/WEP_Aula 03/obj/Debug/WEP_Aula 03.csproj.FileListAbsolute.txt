@@ -1,0 +1,52 @@
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\WEP_Aula 03.dll.config
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\WEP_Aula 03.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\WEP_Aula 03.pdb
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Antlr3.Runtime.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\AspNet.ScriptManager.jQuery.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\EntityFramework.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\EntityFramework.SqlServer.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.Google.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Web.Infrastructure.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Newtonsoft.Json.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Owin.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\System.Web.Optimization.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\System.Web.Providers.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\WebGrease.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\System.Web.Optimization.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Antlr3.Runtime.pdb
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Newtonsoft.Json.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\EntityFramework.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\EntityFramework.SqlServer.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\System.Web.Providers.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.Google.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\obj\Debug\WEP_Aula 03.csprojResolveAssemblyReference.cache
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\obj\Debug\WEP_Aula 03.dll
+C:\Tiago\WEP_Aula 03\WEP_Aula 03\obj\Debug\WEP_Aula 03.pdb
