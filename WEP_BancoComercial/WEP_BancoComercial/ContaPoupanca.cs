@@ -7,23 +7,16 @@ namespace MetodosBancoComercial.Conta.Poupanca
 {
     public class ContaPoupanca : Conta
     {
-        public double Juros;
+        private double TaxaRendimento;
 
-        public void CalculaMes()
+        public ContaPoupanca():base()
         {
-            Saldo = Saldo + (Saldo * this.Juros / 100);            
+            TaxaRendimento = 5;
         }
 
-        public bool Saque(double Valor)
+        public override void CalcularMes()
         {
-            if (Valor > Saldo)
-                return false;
-            else
-            {
-                Saldo = Saldo - Valor;
-                return true;
-            }
-            
+            Saldo *= 1 + (TaxaRendimento / 100);
         }
     }
 }

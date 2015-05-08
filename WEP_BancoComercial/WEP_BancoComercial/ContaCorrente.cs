@@ -7,14 +7,25 @@ namespace MetodosBancoComercial.Conta.Corrente
 {
     public class ContaCorrente : Conta
     {
-        public double Taxa;
+        public double Tarifa;
         public double LimiteCredito;
-        public double Juros;
+        public double TaxaJuros;
 
-        public void CalculaMes()
+        public ContaCorrente (double tarifa = 50, double limiteCredito = 1000, double taxajuros = 7):base()
         {
-            Saldo = Saldo - this.Taxa;
-                        
+            this.Tarifa = tarifa;
+            this.LimiteCredito = limiteCredito;
+            this.TaxaJuros = taxajuros;
+        }
+               
+        public override void CalcularMes()
+        {
+            Saldo -= Tarifa;
+
+            if (Saldo < 0)
+            {
+                Saldo = Saldo - (Saldo * TaxaJuros / 100);
+            }
         }
 
     }

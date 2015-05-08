@@ -5,31 +5,38 @@ using System.Web;
 
 namespace MetodosBancoComercial.Conta
 {
-    public class Conta
+    public abstract class Conta
     {
         public string Banco;
-        public string Agencia;
-        public string NumeroConta;
+        public int Agencia;
+        public int NumeroConta;
         public string Titular;
         public double Saldo;
 
-        public void Deposito(double Valor)
+        public Conta()
         {
-            Saldo = Saldo + Valor;
+            this.Banco = String.Empty;
+            this.Agencia = 0;
+            this.NumeroConta = 0;
+            this.Titular = String.Empty;
+            this.Saldo = 0;
         }
 
-        public string MostraInformacoes()
+        public abstract void CalcularMes();
+                
+        public virtual string MostraInformacoes()
         {
-            return string.Format("Banco: {0}\nAgência: {1} Conta: {2}\nTitular: {3}\nSaldo: {4}", Banco, Agencia, NumeroConta, Titular, Saldo);
+            return string.Format("Banco: {0}\nAgência: {1} Conta: {2}\nTitular: {3}\nSaldo: ", Banco, Agencia, NumeroConta, Titular, Saldo.ToString("R$ #,##0.00"));
         }
 
-        public Conta(string banco, string agencia, string numeroConta, string titular, double saldo)
+        public virtual void Sacar(double Valor)
         {
-            this.Banco = banco;
-            this.Agencia = agencia;
-            this.NumeroConta = numeroConta;
-            this.Titular = titular;
-            this.Saldo = saldo;
+            Saldo -= Valor;
         }
+        
+        public virtual void Depositar(double Valor)
+        {
+            Saldo += Valor;
+        }        
     }
 }
