@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MICModelStoreContainer" CdmEntityContainer="MICEntities">
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="MICModel.Cliente">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="cd_Cliente" ColumnName="cd_Cliente" />
+          <ScalarProperty Name="cd_Profissao" ColumnName="cd_Profissao" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="LimiteCompras" ColumnName="LimiteCompras" />
+          <ScalarProperty Name="LimiteCredito" ColumnName="LimiteCredito" />
+          <ScalarProperty Name="DtNascimento" ColumnName="DtNascimento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profissoes">
+      <EntityTypeMapping TypeName="MICModel.Profisso">
+        <MappingFragment StoreEntitySet="Profissoes">
+          <ScalarProperty Name="cd_Profissao" ColumnName="cd_Profissao" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
