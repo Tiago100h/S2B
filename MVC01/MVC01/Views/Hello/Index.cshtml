@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using(Html.BeginForm("RepeteNome", "Hello", FormMethod.Post))
+{ 
+    <b>Vezes: </b>
+    <select name="vezes">
+        <option value="1">1 Vez</option>
+        <option value="2">2 Vezes</option>
+        <option value="3">3 Vezes</option>
+        <option value="4">4 Vezes</option>
+        <option value="5">5 Vezes</option>
+    </select>
+    <br /> 
+    <b>Nome: </b> @Html.TextBox("Nome", null, new { title="Esse é o input nome" })
+    <br />
+    <input type="submit" name="name" value="Enviar" />
+}
+
+
+@using (Html.BeginForm("QuantidadeDiasMes", "Calendario", FormMethod.Post))
+{
+    <select name="Mes">
+        <option value="1">Janeiro</option>
+        <option value="2">Fevereiro</option>
+        <option value="3">Março</option>
+        <option value="4">Abril</option>
+        <option value="5">Maio</option>
+        <option value="6">Junho</option>
+        <option value="7">Julho</option>
+        <option value="8">Agosto</option>
+        <option value="9">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Desembro</option>
+    </select>
+    <br />
+    <b>Ano: </b> @Html.TextBox("Ano", null)
+    <br />
+    <input type="submit" name="name" value="Enviar" />
+}
+

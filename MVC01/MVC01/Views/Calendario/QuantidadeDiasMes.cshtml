@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "QuantidadeDiasMes";
+}
+
+<h2>QuantidadeDiasMes</h2>
+
+@*<h3>@String.Format("O mês {0} do ano {1} contém {2} dias", ViewBag.Mes, ViewBag.Ano, DateTime.DaysInMonth(ViewBag.Ano, ViewBag.Mes))</h3>*@
+
+<h3>O mês @ViewBag.Mes do ano @ViewBag.Ano contém @DateTime.DaysInMonth(ViewBag.Ano, ViewBag.Mes) dias</h3>
