@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MICModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="cd_Cliente" />
+          </Key>
+          <Property Name="cd_Cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cd_Profissao" Type="int" />
+          <Property Name="Nome" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Endereco" Type="varchar" MaxLength="50" />
+          <Property Name="Bairro" Type="varchar" MaxLength="30" />
+          <Property Name="Cidade" Type="varchar" MaxLength="30" />
+          <Property Name="UF" Type="varchar" MaxLength="2" />
+          <Property Name="CEP" Type="varchar" MaxLength="8" />
+          <Property Name="LimiteCompras" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="LimiteCredito" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="DtNascimento" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Profissoes">
+          <Key>
+            <PropertyRef Name="cd_Profissao" />
+          </Key>
+          <Property Name="cd_Profissao" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="40" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Clientes__cd_Pro__1367E606">
+          <End Role="Profissoes" Type="Self.Profissoes" Multiplicity="0..1" />
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Profissoes">
+              <PropertyRef Name="cd_Profissao" />
+            </Principal>
+            <Dependent Role="Clientes">
+              <PropertyRef Name="cd_Profissao" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MICModelStoreContainer">
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Profissoes" EntityType="Self.Profissoes" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Clientes__cd_Pro__1367E606" Association="Self.FK__Clientes__cd_Pro__1367E606">
+            <End Role="Profissoes" EntitySet="Profissoes" />
+            <End Role="Clientes" EntitySet="Clientes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MICModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="cd_Cliente" />
+          </Key>
+          <Property Name="cd_Cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cd_Profissao" Type="Int32" />
+          <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Endereco" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Cidade" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="UF" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="CEP" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="LimiteCompras" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="LimiteCredito" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="DtNascimento" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Profissoes" Relationship="Self.FK__Clientes__cd_Pro__1367E606" FromRole="Clientes" ToRole="Profissoes" />
+        </EntityType>
+        <EntityType Name="Profissoes">
+          <Key>
+            <PropertyRef Name="cd_Profissao" />
+          </Key>
+          <Property Name="cd_Profissao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Clientes" Relationship="Self.FK__Clientes__cd_Pro__1367E606" FromRole="Profissoes" ToRole="Clientes" />
+        </EntityType>
+        <Association Name="FK__Clientes__cd_Pro__1367E606">
+          <End Role="Profissoes" Type="Self.Profissoes" Multiplicity="0..1" />
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Profissoes">
+              <PropertyRef Name="cd_Profissao" />
+            </Principal>
+            <Dependent Role="Clientes">
+              <PropertyRef Name="cd_Profissao" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MICEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+          <EntitySet Name="Profissoes" EntityType="Self.Profissoes" />
+          <AssociationSet Name="FK__Clientes__cd_Pro__1367E606" Association="Self.FK__Clientes__cd_Pro__1367E606">
+            <End Role="Profissoes" EntitySet="Profissoes" />
+            <End Role="Clientes" EntitySet="Clientes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MICModelStoreContainer" CdmEntityContainer="MICEntities">
+          <EntitySetMapping Name="Clientes">
+            <EntityTypeMapping TypeName="MICModel.Clientes">
+              <MappingFragment StoreEntitySet="Clientes">
+                <ScalarProperty Name="cd_Cliente" ColumnName="cd_Cliente" />
+                <ScalarProperty Name="cd_Profissao" ColumnName="cd_Profissao" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+                <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+                <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+                <ScalarProperty Name="UF" ColumnName="UF" />
+                <ScalarProperty Name="CEP" ColumnName="CEP" />
+                <ScalarProperty Name="LimiteCompras" ColumnName="LimiteCompras" />
+                <ScalarProperty Name="LimiteCredito" ColumnName="LimiteCredito" />
+                <ScalarProperty Name="DtNascimento" ColumnName="DtNascimento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Profissoes">
+            <EntityTypeMapping TypeName="MICModel.Profissoes">
+              <MappingFragment StoreEntitySet="Profissoes">
+                <ScalarProperty Name="cd_Profissao" ColumnName="cd_Profissao" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

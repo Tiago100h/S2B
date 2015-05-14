@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MICModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="cd_Cliente" />
+    </Key>
+    <Property Name="cd_Cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cd_Profissao" Type="Int32" />
+    <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Endereco" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Cidade" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UF" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="CEP" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="LimiteCompras" Type="Decimal" Precision="15" Scale="2" />
+    <Property Name="LimiteCredito" Type="Decimal" Precision="15" Scale="2" />
+    <Property Name="DtNascimento" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Profissoes" Relationship="Self.FK__Clientes__cd_Pro__1367E606" FromRole="Clientes" ToRole="Profissoes" />
+  </EntityType>
+  <EntityType Name="Profissoes">
+    <Key>
+      <PropertyRef Name="cd_Profissao" />
+    </Key>
+    <Property Name="cd_Profissao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Clientes" Relationship="Self.FK__Clientes__cd_Pro__1367E606" FromRole="Profissoes" ToRole="Clientes" />
+  </EntityType>
+  <Association Name="FK__Clientes__cd_Pro__1367E606">
+    <End Role="Profissoes" Type="Self.Profissoes" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profissoes">
+        <PropertyRef Name="cd_Profissao" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="cd_Profissao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MICEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="Profissoes" EntityType="Self.Profissoes" />
+    <AssociationSet Name="FK__Clientes__cd_Pro__1367E606" Association="Self.FK__Clientes__cd_Pro__1367E606">
+      <End Role="Profissoes" EntitySet="Profissoes" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
