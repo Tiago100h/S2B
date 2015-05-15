@@ -17,5 +17,18 @@ namespace WAP_ProjetoMIC
                 DDL_Profissoes.DataBind();
             }
         }
+
+        protected void Botao_Salvar_Click()
+        {
+            var db = new MICEntities();
+
+            
+
+        }
+
+        protected void Botao_Cancelar_Click()
+        {
+           
+        }
     }
 }

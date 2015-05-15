@@ -167,7 +167,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="EditarCliente.aspx" />
+    <Content Include="CadastrarCliente.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -372,12 +372,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EditarCliente.aspx.cs">
-      <DependentUpon>EditarCliente.aspx</DependentUpon>
+    <Compile Include="CadastrarCliente.aspx.cs">
+      <DependentUpon>CadastrarCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EditarCliente.aspx.designer.cs">
-      <DependentUpon>EditarCliente.aspx</DependentUpon>
+    <Compile Include="CadastrarCliente.aspx.designer.cs">
+      <DependentUpon>CadastrarCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
