@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-WAP_ProjetoMIC-20150514041433.mdf;Initial Catalog=aspnet-WAP_ProjetoMIC-20150514041433;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\S2B\\Documents\\GitHub\\S2B\\SOL_ProjetoMIC\\WAP_ProjetoMIC\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="MICEntities-local-Web.config Connection String" description="MICEntities-local Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/MIC.csdl|res://*/MIC.ssdl|res://*/MIC.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.;initial catalog=MIC;user id=MIC;password=Micvix001;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\S2B\\Documents\\GitHub\\S2B\\SOL_ProjetoMIC\\WAP_ProjetoMIC\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MICEntities-local']/@connectionString" />
+  </parameter>
+  <parameter name="MICEntities-Web.config Connection String" description="MICEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/MIC.csdl|res://*/MIC.ssdl|res://*/MIC.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=mh45wz2s5t.database.windows.net;initial catalog=MIC;user id=TGP;password=Micvix001;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\S2B\\Documents\\GitHub\\S2B\\SOL_ProjetoMIC\\WAP_ProjetoMIC\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MICEntities']/@connectionString" />
+  </parameter>
+  <parameter name="MICConnectionString-Web.config Connection String" description="MICConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=.;Initial Catalog=MIC;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\S2B\\Documents\\GitHub\\S2B\\SOL_ProjetoMIC\\WAP_ProjetoMIC\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MICConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
